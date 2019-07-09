@@ -9,13 +9,13 @@ Link Github: https://github.com/chinhhi102/Bootstrap_AngularJS_Assignment
 cd Online-Training
 ng serve --open
 ### 3. Môi trường phát triển dự án ###
-- Hệ điều hành
+- Hệ điều hành\
 Trang web chạy được trên hệ điều hành windows, Mac OS,Android
-- Ngôn ngữ lập trình
+- Ngôn ngữ lập trình\
 Java Script , Java, HTML, CSS, SCSS ,JQuery, TypeScript...
-- IDE
-Spring Tool Suite 4
-Atom
+- IDE\
+Spring Tool Suite 4\
+Atom\
 VS Code
 ### 4. Danh sách các thành viên ###
 - Đoàn Công Chính
