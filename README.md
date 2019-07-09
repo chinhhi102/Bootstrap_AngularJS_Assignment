@@ -5,6 +5,9 @@ ISC Quang Trung FrontEnd Assignment
 Website thi trắc nghiệm trực tuyến triển khai theo hình thức SPA sử dụng công nghệ Bootstrap và AngularJS
 ### 2. Thông tin dự án ###
 Link Github: https://github.com/chinhhi102/Bootstrap_AngularJS_Assignment
+###### Command run Project
+cd Online-Training
+ng serve --open
 ### 3. Môi trường phát triển dự án ###
 - Hệ điều hành
 Trang web chạy được trên hệ điều hành windows, Mac OS,Android
@@ -21,3 +24,4 @@ VS Code
 - Hứa Đức Lượng
 - Phan Lâm Trường Hải
 ### 5. Bản quyền (License) ###
+GNU General Public License v3.0
