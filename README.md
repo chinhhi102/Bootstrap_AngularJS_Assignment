@@ -24,4 +24,4 @@ ng serve --open
 - Hứa Đức Lượng
 - Phan Lâm Trường Hải
 ### 5. Bản quyền (License) ###
-. GNU General Public License v3.0
+GNU General Public License v3.0
