@@ -7,6 +7,7 @@ import { LienHeComponent } from './View/Common_Page/lien-he/lien-he.component';
 import { GopYComponent } from './View/Common_Page/gop-y/gop-y.component';
 import { HoiDapComponent } from './View/Common_Page/hoi-dap/hoi-dap.component';
 import { ExamComponent } from './View/Home_Exam/exam/exam.component';
+import { ExamDetailComponent } from './View/Home_Exam/exam-detail/exam-detail.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'lienhe', component: LienHeComponent },
   { path: 'gopy', component: GopYComponent },
   { path: 'hoidap', component: HoiDapComponent },
-  { path: 'exam', component: ExamComponent }
+  { path: 'exam', component: ExamComponent },
+  { path: 'exam/:id/:page', component: ExamDetailComponent }
 ];
 
 @NgModule({

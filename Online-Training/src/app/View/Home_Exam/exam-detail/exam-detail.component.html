@@ -1,0 +1,7 @@
+<h3>{{ Question }}</h3>
+<form>
+    <div *ngFor="let answer of Answers">
+        <input type="radio" name="answer" value="{{ answer.Text }}">
+        {{ answer.Text }}
+    </div>
+</form>
