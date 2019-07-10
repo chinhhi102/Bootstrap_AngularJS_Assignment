@@ -1,0 +1,17 @@
+#Exam{
+    clear: both;
+    display: block;
+}
+
+#ExamLeft{
+    clear: both;
+    float: left;
+    width: 70%;
+    display: table-cell;
+}
+
+#ExamRigh{
+    clear: both;
+    width: 30%;
+    display: table-cell;
+}

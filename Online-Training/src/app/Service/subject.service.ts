@@ -13,6 +13,7 @@ export class SubjectService {
       console.log(data);
     });
   }
+
   public getJSON(): Observable<any> {
     return this.http.get("../../assets/db/Subjects.js");
   }
