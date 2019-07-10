@@ -1,1 +1,23 @@
-<p>danh-muc works!</p>
+<ul id="id_ul">
+  <li style="text-align:center">
+    <a href="danhmuc">
+      <strong>Danh mục</strong>
+    </a>
+  </li>
+  <li
+    *ngFor="let subject of subjects"
+    [class.selected]="subject === selectedSubject"
+    (click)="onSelect(subject)">
+    <a href="exam/{{ subject.id }}">{{ subject.Name }} </a>
+  </li>
+</ul>
+<div *ngIf="selectedHero">
+  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ selectedHero.id }}</div>
+  <div>
+    <label
+      >name:
+      <input [(ngModel)]="selectedHero.name" placeholder="name" />
+    </label>
+  </div>
+</div>

@@ -1,56 +1,42 @@
-<img src="/Online-Training/src/assets/images/banner.png" alt="#" srcset="#" />
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/home">Home</a></li>
-      <li><a href="/gioithieu">Giới thiệu</a></li>
-      <li><a href="/lienhe">Liên hệ</a></li>
-      <li><a href="/gopy">Góp ý</a></li>
-      <li><a href="/hoidap">Hỏi đáp</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Tài khoản <span class="caret"></span
-        ></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- <nav>
-    <div class="container-fluid">
-  <ul class="nav navbar-nav">
-      <li><a href="/home">Home</a></li>
-    <li><a href="/gioithieu">Giới thiệu</a></li>
-    <li><a href="/lienhe">Liên hệ</a></li>
-    <li><a href="/gopy">Góp ý</a></li>
-    <li><a href="/hoidap">Hỏi đáp</a></li>
+<header>
+  <img src="../assets/images/banner.png" alt="" width="100%" />
+</header>
+<nav>
+  <ul>
+    <li class="lileft">
+      <a href="Home">Trang chủ</a>
+    </li>
+    <li class="lileft">
+      <a href="gioithieu">Giới thiệu</a>
+    </li>
+    <li class="lileft">
+      <a href="lienhe">Liên hệ</a>
+    </li>
+    <li class="lileft">
+      <a href="gopy">Góp ý</a>
+    </li>
+    <li class="lileft">
+      <a href="hoidap">Hỏi đáp</a>
+    </li>
     <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li>
+      <button class="dropbtn">Tài khoản</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="dangky">Đăng ký</a>
+        <a href="dangnhap">Đăng nhập</a>
+        <a href="quenmatkhau" style="border-bottom: solid 1px gray">Quên mật khẩu</a>
+        <a href="dangxuat">Đăng xuất</a>
+        <a href="doimatkhau">Đổi mật khẩu </a>
+        <a href="capnhap">Cập nhật tài khoản</a>
+      </div>
+    </li>
   </ul>
-  </div>
-</nav> -->
+</nav>
 <article>
-  <aside id="left">
-    <div class="vertical-menu">
-      <a href="#" class="active">Danh mục môn học</a>
-      <a href="#"></a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
-    </div>
+  <aside id="aside">
+    <app-danh-muc></app-danh-muc>
   </aside>
-  <router-outlet></router-outlet>
+  <section id="section">
+    <router-outlet></router-outlet>
+  </section>
 </article>
+<footer></footer>

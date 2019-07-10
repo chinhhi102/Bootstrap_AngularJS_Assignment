@@ -1,81 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="css/layout-HomePage.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="css/layout-HomePage.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 <body>
-  
-<header>
-   <img src="images/banner.png" alt=""width="100%">
-</header>
-  
+
+  <header>
+    <img src="images/banner.png" alt="" width="100%">
+  </header>
+
   <ul>
-        <li><a href="homepage.html">Trang chủ</a></li>
-        <li><a href="introduce-page.html">Giới thiệu</a></li>
-        <li><a href="contact.html">Liên hệ</a></li>
-        <li><a href="contact.html">Góp ý</a></li>
-        <li><a href="contact.html">Hỏi đáp</a></li>
-       
-        
-            <li class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Tài khoản</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="signup.html">Đăng ký</a>
-                  <a href="login.html">Đăng nhập</a>
-                  <a href="#contact">Quên mật khẩu</a>
-                  <a href="#home">Đăng xuất</a>
-                  <a href="#about">Đổi mật khẩu </a>
-                  <a href="#contact">Cập nhật tài khoản</a>
-                </div>
-            </li>
-              </div>
-       
-      </ul>
-     
-  
-      <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
+    <li>
+      <a href="homepage.html">Trang chủ</a>
+    </li>
+    <li>
+      <a href="introduce-page.html">Giới thiệu</a>
+    </li>
+    <li>
+      <a href="contact.html">Liên hệ</a>
+    </li>
+    <li>
+      <a href="contact.html">Góp ý</a>
+    </li>
+    <li>
+      <a href="contact.html">Hỏi đáp</a>
+    </li>
+
+
+    <li class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Tài khoản</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="signup.html">Đăng ký</a>
+        <a href="login.html">Đăng nhập</a>
+        <a href="#contact">Quên mật khẩu</a>
+        <a href="#home">Đăng xuất</a>
+        <a href="#about">Đổi mật khẩu </a>
+        <a href="#contact">Cập nhật tài khoản</a>
+      </div>
+    </li>
+    </div>
+
+  </ul>
+
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
           }
         }
       }
-      </script>
-      <ul id="id_ul">
-            <li style="text-align:center"><strong>Danh mục</strong></a></li></br>
-            <li><a  href="#news">Kiểm thử và triển khai</a></li></br>
-            <li><a  href="#contact">SQL Server</a></li></br>
-            <li><a  href="#news">Điện toán đám mấy</a></li></br>
-            <li><a  href="#contact">Lập trình PHP</a></li></br>
-            <li><a  href="#contact">Lập trình Android nâng cao</a></li></br>
-            <li><a  href="#contact">Lập trình Android cơ bản</a></li></br>
-            <li><a  href="#contact">Thiết kế Layout</a></li></br>
-            <li><a  href="#contact">Thiết kế giao diện trên Android</a></li></br>
-            <li><a  href="#contact">Quản lý dự án với Agile</a></li></br>
-            <li><a  href="#contact">Internet Marketing</a></li></br>
-            <li><a  href="#contact">Lập trình hướng đối tượng với java</a></li></br>
-            <li><a  href="#contact">Lập trình ASP.NET</a></li></br>
-          </ul>
-      
-     
+    }
+  </script>
+  <ul id="id_ul">
+    <li style="text-align:center">
+      <strong>Danh mục</strong>
+      </a>
+    </li>
+    </br>
+    <li>
+      <a href="#news">Kiểm thử và triển khai</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">SQL Server</a>
+    </li>
+    </br>
+    <li>
+      <a href="#news">Điện toán đám mấy</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Lập trình PHP</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Lập trình Android nâng cao</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Lập trình Android cơ bản</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Thiết kế Layout</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Thiết kế giao diện trên Android</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Quản lý dự án với Agile</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Internet Marketing</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Lập trình hướng đối tượng với java</a>
+    </li>
+    </br>
+    <li>
+      <a href="#contact">Lập trình ASP.NET</a>
+    </li>
+    </br>
+  </ul>
+
+
 </body>
 
 </html>
