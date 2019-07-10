@@ -14,6 +14,8 @@ import { GopYComponent } from './View/Common_Page/gop-y/gop-y.component';
 import { HoiDapComponent } from './View/Common_Page/hoi-dap/hoi-dap.component';
 import { DanhMucComponent } from './View/Home_Exam/danh-muc/danh-muc.component';
 import { ExamComponent } from './View/Home_Exam/exam/exam.component';
+import { HttpClientModule } from "@angular/common/http";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ExamComponent } from './View/Home_Exam/exam/exam.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,13 +1,12 @@
   #id_ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     background-color: #f1f1f1;
   }
   
   #id_li a {
     display: block;
     color: #000;
-   
     text-decoration: none;
   }

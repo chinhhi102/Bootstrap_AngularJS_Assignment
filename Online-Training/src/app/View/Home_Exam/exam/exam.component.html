@@ -1,1 +1,17 @@
-<p>exam works!</p>
+<ul id="id_ul">
+  <li
+    *ngFor="let subject of subjects | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize"
+    [class.selected]="subject === selectedSubject">
+    <div class="card">
+      <img src="../../../../assets/images/logos/{{ subject.Logo }}" alt="" style="width:100%" />
+      <h5>{{ subject.Name }}</h5>
+      <p><a href="exam/{{ subject.Id }}">Quiz</a></p>
+    </div>
+  </li>
+</ul>
+<div id="pagination">
+<ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="subjects.length"></ngb-pagination>
+</div>

@@ -72,12 +72,13 @@
  
 article{
   clear: both;
-  display: table;
+  display: block;
 }
 
 #aside{
   clear: both;
-  width: 30%;
+  float: left;
+  width: 25%;
   display: table-cell;
 }
 

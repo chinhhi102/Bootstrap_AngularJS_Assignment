@@ -6,13 +6,15 @@ import { GioiThieuComponent } from './View/Common_Page/gioi-thieu/gioi-thieu.com
 import { LienHeComponent } from './View/Common_Page/lien-he/lien-he.component';
 import { GopYComponent } from './View/Common_Page/gop-y/gop-y.component';
 import { HoiDapComponent } from './View/Common_Page/hoi-dap/hoi-dap.component';
+import { ExamComponent } from './View/Home_Exam/exam/exam.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'gioithieu', component: GioiThieuComponent },
   { path: 'lienhe', component: LienHeComponent },
   { path: 'gopy', component: GopYComponent },
-  { path: 'hoidap', component: HoiDapComponent }
+  { path: 'hoidap', component: HoiDapComponent },
+  { path: 'exam', component: ExamComponent }
 ];
 
 @NgModule({
