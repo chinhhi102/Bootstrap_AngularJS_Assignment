@@ -7,7 +7,7 @@
     <h3 style="border-bottom: 1px solid gray">Trả lời</h3>
     <form id="Ans">
       <div *ngFor="let answer of Answers">
-        <input type="radio" name="answer" value="{{ answer.Id }}" />
+        <input type="radio" name="answer" value="{{ answer.Id }}"/>
         {{ answer.Text }}
       </div>
     </form>
@@ -17,7 +17,7 @@
     <ng-template #disLeft>
       <input disable="disable" type="button" value="Trước" />
     </ng-template>
-    <ng-template [ngIf]="curentPage != Quizs.length - 1" [ngIfElse]="disRight">
+    <ng-template [ngIf]="curentPage != length - 1" [ngIfElse]="disRight">
       <input (click)="navQuiz(curentPage + 1)" type="button" value="Sau" />
     </ng-template>
     <ng-template #disRight>
