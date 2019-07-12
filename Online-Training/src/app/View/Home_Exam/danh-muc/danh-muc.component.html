@@ -1,12 +1,12 @@
 <ul id="id_ul">
-  <li style="text-align:center">
+  <li id="title" style="font-size:25px; margin-bottom: 10px;">
     <a href="exam">
-      <strong>Danh mục</strong>
+      <strong style="transition: all .6s ease-out;  text-decoration: underline;  color:#248ea9; letter-spacing: 4px;font-size:30px;">Danh mục</strong>
     </a>
   </li>
-  <li
-    *ngFor="let subject of subjects"
-    [class.selected]="subject === selectedSubject">
-    <a href="exam/{{ subject.Id }}" onclick="return TimeStart(new Date().getTime())">{{ subject.Name }} </a>
-  </li>
+  <div class="container-list">
+    <li id="id_li" *ngFor="let subject of subjects" [class.selected]="subject === selectedSubject">
+      <a href="exam/{{ subject.Id }}" onclick="return TimeStart(new Date().getTime())">{{ subject.Name }} </a>
+    </li>
+  </div>
 </ul>

@@ -61,11 +61,11 @@ export class ExamDetailComponent implements OnInit {
     var Opt = Az.children;
     for(var k = 0; k < Opt.length; k++){
       var para = Opt[k].children[0];
-      if(para.checked){
-        var key = this.curentQuiz.Id.toString();
-        var value = para.value.toString();
-        this.PAns[key] = value;
-      }
+      // if(para.checked){
+      //   var key = this.curentQuiz.Id.toString();
+      //   var value = para.value.toString();
+      //   this.PAns[key] = value;
+      // }
     }
     this.curentPage = i;
 
@@ -74,20 +74,20 @@ export class ExamDetailComponent implements OnInit {
     var ans = this.Answers;
     var res = document.createElement("form");
     res.id = "Ans";
-    for(var k = 0; k < ans.length; k++ ){
-      var div = document.createElement("div");
-      var para = document.createElement("input");
-      var key = this.curentQuiz.Id.toString();
-      para.type = "radio";
-      para.value = ans[k]['Id'];
-      if(this.PAns[key] != undefined)
-        para.checked = (this.PAns[key].toString() == ans[k]['Id'].toString());
-      if(para.checked)
-        console.log(ans[k]['Text']);
-      div.appendChild(para);
-      div.textContent = ans[k]['Text'];
-      res.appendChild(div);
-    }
+    // for(var k = 0; k < ans.length; k++ ){
+    //   var div = document.createElement("div");
+    //   var para = document.createElement("input");
+    //   var key = this.curentQuiz.Id.toString();
+    //   para.type = "radio";
+    //   para.value = ans[k]['Id'];
+    //   if(this.PAns[key] != undefined)
+    //     para.checked = (this.PAns[key].toString() == ans[k]['Id'].toString());
+    //   if(para.checked)
+    //     console.log(ans[k]['Text']);
+    //   div.appendChild(para);
+    //   div.textContent = ans[k]['Text'];
+    //   res.appendChild(div);
+    // }
     cQ.innerHTML = this.curentQuiz.Text;
     nQ.innerHTML = "Câu hỏi số " + (i + 1);
     Az = res;
