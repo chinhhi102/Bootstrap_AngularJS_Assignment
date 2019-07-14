@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'gopy', component: GopYComponent },
   { path: 'hoidap', component: HoiDapComponent },
   { path: 'exam', component: ExamComponent },
-  { path: 'exam/:id/:page', component: ExamDetailComponent }
+  { path: 'exam/:id', component: ExamDetailComponent }
 ];
 
 @NgModule({
