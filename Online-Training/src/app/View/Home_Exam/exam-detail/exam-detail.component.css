@@ -1,3 +1,4 @@
+
 #Exam{
     clear: both;
     display: block;
@@ -23,7 +24,6 @@
     min-height: 300px;
 }
 #Exam .fixed-Content{
-    border:1px solid red;
     min-height: 400px;
     width:100%;
 }
@@ -32,7 +32,6 @@
 /*Button Form*/
 .Button-Form{
     text-align: right;
-    border:1px solid black;
 }
 .Button-Form button{
     color: white;
@@ -54,7 +53,6 @@
 /*Button submit*/
 .Quiz{
     display: block; 
-    border:1px solid red;
     padding: 7px;
 }
 .Quiz > input[type="button"]{
@@ -93,4 +91,7 @@
 .Submit button:active{
     background:#45969b;
     box-shadow: 18px 30px 68px -17px rgba(0,0,0,0.75);
+}
+.Checked{
+    background:grey;
 }

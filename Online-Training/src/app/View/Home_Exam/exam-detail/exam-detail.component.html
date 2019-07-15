@@ -3,7 +3,8 @@
     <h1>
       {{ subject.Name }}
     </h1>
-    <p id="demo">Timer: 00:00</p>
+    <!-- Display the countdown timer in an element -->
+    <p id="demo" style="background:rgba(17,17,17,0.9); width: 120px;padding:10px; color:#59d4e8; font-weight: bold;font-size: 16px;border-radius: 16px;">Timer: 00:00</p>
   </div>
   <div class="fixed-Content">
     <div class="container-content">
@@ -14,7 +15,7 @@
     <hr>
     <form id="Ans" style="font-size: 20px;">
       <div *ngFor="let answer of Answers" class="padding:10px;">
-        <input style="margin: 10px 10px 0 0;" type="radio" name="answer" id="{{ answer.Id }}" value="{{ answer.Id }}" />
+        <input style="margin: 10px 10px 0 0;" type="radio" name="answer" id="{{ answer.Id }}" value="{{ answer.Id }}"/>
         <span><label style="font-weight: 200" for="{{ answer.Id }}">{{ answer.Text }}</label></span>
       </div>
     </form>
@@ -22,7 +23,7 @@
   </div>
   <div>
 
-    <!-- Display the countdown timer in an element -->
+    
     <div class="Button-Form">
       <ng-template [ngIf]="curentPage != 0" [ngIfElse]="disLeft">
         <button title="Quay lại" (click)="navQuiz(curentPage - 1)" type="button"><i class="fas fa-arrow-circle-left"></i></button>

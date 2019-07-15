@@ -58,15 +58,16 @@ export class ExamDetailComponent implements OnInit {
     var cQ = document.getElementById("Quiz");
     var Az = document.getElementById("Ans");
     var nQ = document.getElementById("nQ");
-    var Opt = Az.children;
-    for(var k = 0; k < Opt.length; k++){
+    var Az2=document.getElementsByName("answer");
+    var Opt = Az.children;   
+    for(var k = 0; k < Az2.length; k++){
       var para = Opt[k].children[0];
-      // if(para.checked){
-      //   var key = this.curentQuiz.Id.toString();
+      //if(Az2[k].checked===true){
+      //  alert('Hello');
+      //  var key = this.curentQuiz.Id.toString();
       //   var value = para.value.toString();
       //   this.PAns[key] = value;
-      // }
-    }
+      }
     this.curentPage = i;
 
     this.curentQuiz = this.Quizs[i];
@@ -91,5 +92,11 @@ export class ExamDetailComponent implements OnInit {
     cQ.innerHTML = this.curentQuiz.Text;
     nQ.innerHTML = "Câu hỏi số " + (i + 1);
     Az = res;
-  }    
+  }
+  // storeChoice(){
+  //   var cQ = document.getElementById("Quiz");
+  //   var Az = document.getElementById("Ans");
+  //   var nQ = document.getElementById("nQ");
+
+  // }    
 }
