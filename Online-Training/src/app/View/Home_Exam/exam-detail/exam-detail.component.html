@@ -5,8 +5,7 @@
         <h3 style="border-bottom: 1px solid gray">Trả lời</h3>
         <form>
             <div *ngFor="let answer of Answers">
-                <input type="radio" name="answer" value="{{ answer.Text }}">
-                {{ answer.Text }}
+                <input type="radio" name="answer" value="{{ answer.Text }}"> {{ answer.Text }}
             </div>
         </form>
         <ng-template [ngIf]="curentPage!=1" [ngIfElse]="disLeft">
@@ -29,8 +28,7 @@
                 Sau
             </a>
         </ng-template><br>
-        <a href="exam/{{ curentQuizId }}/{{ i + 1 }}" *ngFor="let item of Quizs; let i = index;"
-            style="color: #000;border: 1px solid red; width:70px; height: 30px; background-color: green; margin: 5px; padding: 5px; float: left;">Câu
+        <a href="exam/{{ curentQuizId }}/{{ i + 1 }}" *ngFor="let item of Quizs; let i = index;" style="color: #000;border: 1px solid red; width:70px; height: 30px; background-color: green; margin: 5px; padding: 5px; float: left;">Câu
             {{ i + 1 }}</a>
     </div>
     <div id="ExamRight">
