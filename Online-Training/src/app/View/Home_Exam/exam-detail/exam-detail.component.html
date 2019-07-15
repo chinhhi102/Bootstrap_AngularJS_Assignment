@@ -1,53 +1,44 @@
-<div id="Exam">
-  <div id="ExamLeft">
-    <h3 style="border-bottom: 1px solid gray" id="nQ">
-      Câu hỏi số {{ curentPage + 1 }}
-    </h3>
-    <p id="Quiz">{{ Question }}</p>
-    <h3 style="border-bottom: 1px solid gray">Trả lời</h3>
-    <form id="Ans">
-      <div *ngFor="let answer of Answers">
-        <input type="radio" name="answer" value="{{ answer.Id }}"/>
-        {{ answer.Text }}
+<div id="Exam" class="container">
+  <div class="title">
+    <h1>
+      {{ subject.Name }}
+    </h1>
+    <!-- Display the countdown timer in an element -->
+    <p id="demo" style="background:rgba(17,17,17,0.9); width: 120px;padding:10px; color:#59d4e8; font-weight: bold;font-size: 16px;border-radius: 16px;">Timer: 00:00</p>
+  </div>
+  <div class="fixed-Content">
+    <div class="container-content">
+    <h4 style="margin-bottom: 20px; text-decoration: underline;" id="nQ">
+      Câu hỏi số {{ curentPage + 1 }}:
+    </h4>
+    <p id="Quiz" style="font-size: 25px; font-weight: 700">{{ Question }}</p>
+    <hr>
+    <form id="Ans" style="font-size: 20px;">
+      <div *ngFor="let answer of Answers" class="padding:10px;">
+        <input style="margin: 10px 10px 0 0;" type="radio" name="answer" id="{{ answer.Id }}" value="{{ answer.Id }}"/>
+        <span><label style="font-weight: 200" for="{{ answer.Id }}">{{ answer.Text }}</label></span>
       </div>
     </form>
-    <ng-template [ngIf]="curentPage != 0" [ngIfElse]="disLeft">
-      <input (click)="navQuiz(curentPage - 1)" type="button" value="Trước" />
-    </ng-template>
-    <ng-template #disLeft>
-      <input disable="disable" type="button" value="Trước" />
-    </ng-template>
-    <ng-template [ngIf]="curentPage != length - 1" [ngIfElse]="disRight">
-      <input (click)="navQuiz(curentPage + 1)" type="button" value="Sau" />
-    </ng-template>
-    <ng-template #disRight>
-      <input disable="disable" type="button" value="Sau" /> </ng-template
-    ><br />
-    <div>
-      <input
-        type="button"
-        id="button"
-        (click)="myFunction()"
-        type="button"
-        value="Nộp bài"
-      />
     </div>
   </div>
-  <div id="ExamRight">
-    <h2>
-      {{ subject.Name }}
-    </h2>
-    <!-- Display the countdown timer in an element -->
-<p id="demo">Timer: 00:00</p>
+  <div>
+
     
-    <div>
-      <input
-        *ngFor="let item of Quizs; let i = index"
-        (click)="navQuiz(i)"
-        style="color: #000;border: 1px solid red; width:70px; height: 30px; background-color: green; margin: 5px; padding: 5px; float: left;"
-        value="Câu {{ i + 1 }}"
-        type="button"
-      />
+    <div class="Button-Form">
+      <ng-template [ngIf]="curentPage != 0" [ngIfElse]="disLeft">
+        <button title="Quay lại" (click)="navQuiz(curentPage - 1)" type="button"><i class="fas fa-arrow-circle-left"></i></button>
+      </ng-template>
+      <ng-template [ngIf]="curentPage != Quizs.length - 1" [ngIfElse]="disRight">
+        <button title="Câu tiếp theo" (click)="navQuiz(curentPage + 1)" type="button"><i class="fas fa-arrow-circle-right"></i></button>
+      </ng-template>
+      
+    </div>
+    <div class="Quiz">
+      <input  *ngFor="let item of Quizs; let i = index" (click)="navQuiz(i)"
+        value="Câu {{ i + 1 }}" type="button" />
     </div>
   </div>
+  <div class="Submit">
+      <button type="button" id="button" (click)="myFunction()" type="button">Nộp Bài</button>
+    </div>
 </div>
