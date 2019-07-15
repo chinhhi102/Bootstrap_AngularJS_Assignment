@@ -8,6 +8,7 @@ import { GopYComponent } from './View/Common_Page/gop-y/gop-y.component';
 import { HoiDapComponent } from './View/Common_Page/hoi-dap/hoi-dap.component';
 import { ExamComponent } from './View/Home_Exam/exam/exam.component';
 import { ExamDetailComponent } from './View/Home_Exam/exam-detail/exam-detail.component';
+import { ForgotPasswordComponent } from './View/Manager_User/forgot-password/forgot-password.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'exam', component: ExamComponent },
   { path: 'hoidap', component: HoiDapComponent },
   { path: 'dangky', component: SignupComponent },
+  { path: 'quenmatkhau', component: ForgotPasswordComponent },
   { path: 'exam/:id/:page', component: ExamDetailComponent }
 ];
 

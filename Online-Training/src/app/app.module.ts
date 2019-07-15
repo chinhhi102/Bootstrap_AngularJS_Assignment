@@ -17,6 +17,7 @@ import { ExamComponent } from './View/Home_Exam/exam/exam.component';
 import { HttpClientModule } from "@angular/common/http";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExamDetailComponent } from './View/Home_Exam/exam-detail/exam-detail.component'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ExamDetailComponent } from './View/Home_Exam/exam-detail/exam-detail.co
     ExamDetailComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

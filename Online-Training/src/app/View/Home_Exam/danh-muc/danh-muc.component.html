@@ -1,12 +1,10 @@
 <ul id="id_ul">
-  <li style="text-align:center">
-    <a href="exam">
-      <strong>Danh mục</strong>
-    </a>
-  </li>
-  <li
-    *ngFor="let subject of subjects"
-    [class.selected]="subject === selectedSubject">
-    <a href="exam/{{ subject.Id }}/1">{{ subject.Name }} </a>
-  </li>
+    <li style="text-align:center">
+        <a href="exam">
+            <strong>Danh mục</strong>
+        </a>
+    </li>
+    <li *ngFor="let subject of subjects" [class.selected]="subject === selectedSubject">
+        <a href="exam/{{ subject.Id}}/1">{{ subject.Name }} </a>
+    </li>
 </ul>
