@@ -16,6 +16,8 @@ const routes: Routes = [
   { path: 'gopy', component: GopYComponent },
   { path: 'hoidap', component: HoiDapComponent },
   { path: 'exam', component: ExamComponent },
+  { path: 'hoidap', component: HoiDapComponent },
+  { path: 'dangky', component: SignupComponent },
   { path: 'exam/:id/:page', component: ExamDetailComponent }
 ];
 
