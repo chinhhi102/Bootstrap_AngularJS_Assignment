@@ -4,9 +4,7 @@
       <strong>Danh mục</strong>
     </a>
   </li>
-  <li
-    *ngFor="let subject of subjects"
-    [class.selected]="subject === selectedSubject">
+  <li *ngFor="let subject of subjects" [class.selected]="subject === selectedSubject">
     <a href="exam/{{ subject.Id }}" onclick="return TimeStart(new Date().getTime())">{{ subject.Name }} </a>
   </li>
 </ul>
