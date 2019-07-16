@@ -88,3 +88,7 @@ article{
   display: table-cell;
   text-align: center;
 }
+
+footer{
+  clear: both;
+}

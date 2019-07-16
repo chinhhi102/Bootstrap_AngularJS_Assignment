@@ -18,6 +18,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExamDetailComponent } from './View/Home_Exam/exam-detail/exam-detail.component'; 
 import { FormsModule } from '@angular/forms';
+import { ThongTinTrangComponent } from './View/thong-tin-trang/thong-tin-trang.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     HoiDapComponent,
     DanhMucComponent,
     ExamComponent,
-    ExamDetailComponent
+    ExamDetailComponent,
+    ThongTinTrangComponent,
   ],
   imports: [
     FormsModule,
