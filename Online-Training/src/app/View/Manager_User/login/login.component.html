@@ -1,5 +1,5 @@
 <div class="loginForm">
-  <form action="#"> 
+  <form action="home" method="POST"> 
     <h2>Login Form</h2>
 
     <div class="containersetion">
@@ -14,7 +14,7 @@
         <label for="psw"><b>Password</b></label><br>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="submit">Login</button><br>
+        <button type="submit" (click)="ktLogin()">Login</button><br>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
